@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        TNPSC Nova AI | India's Smart AI Learning Platform
+    </title>
+
+    <meta name="description"
+          content="AI Powered TNPSC Learning Platform with Smart Notes, AI Teacher, Daily Tests, Mock Exams and Performance Analytics.">
+
+    <meta name="keywords"
+          content="TNPSC, Group 1, Group 2, Group 2A, Group 4, VAO, TNPSC AI">
+
+    <meta name="author"
+          content="TNPSC Nova AI">
+
+    <meta property="og:title"
+          content="TNPSC Nova AI">
+
+    <meta property="og:description"
+          content="India's Smart AI Learning Platform">
+
+    <meta property="og:image"
+          content="assets/images/logo.png">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://tnpscnovaai.in">
+
+    <meta name="theme-color"
+          content="#2563EB">
+
+    <link rel="icon"
+          href="assets/images/favicon.png">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    fontFamily: {
+
+                        sans: ['Inter']
+
+                    },
+
+                    colors: {
+
+                        primary: '#2563EB',
+
+                        secondary: '#3B82F6',
+
+                        accent: '#06B6D4'
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+</head>
+
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+
+<!-- ================================================= -->
+<!-- NAVBAR -->
+<!-- ================================================= -->
+
+<header
+class="fixed top-0 left-0 w-full z-50
+backdrop-blur-xl
+bg-white/80
+border-b
+border-slate-200">
+
+<div class="max-w-7xl
+mx-auto
+px-6">
+
+<div class="flex
+justify-between
+items-center
+h-20">
+
+<a href="#"
+
+class="flex
+items-center
+gap-3">
+
+<img
+src="assets/images/logo.png"
+
+class="w-12 h-12"
+
+alt="TNPSC Nova AI">
+
+<div>
+
+<h2 class="font-black
+text-xl">
+
+TNPSC Nova AI
+
+</h2>
+
+<p class="text-xs
+text-slate-500">
+
+AI Learning Platform
+
+</p>
+
+</div>
+
+</a>
+
+<nav
+
+class="hidden
+lg:flex
+items-center
+gap-10">
+
+<a href="#"
+
+class="font-semibold
+hover:text-primary
+duration-300">
+
+Home
+
+</a>
+
+<a href="#features"
+
+class="font-semibold
+hover:text-primary
+duration-300">
+
+Features
+
+</a>
+
+<a href="#preview"
+
+class="font-semibold
+hover:text-primary
+duration-300">
+
+Preview
+
+</a>
+
+<a href="about.html"
+
+class="font-semibold
+hover:text-primary
+duration-300">
+
+About
+
+</a>
+
+<a href="contact.html"
+
+class="font-semibold
+hover:text-primary
+duration-300">
+
+Contact
+
+</a>
+
+</nav>
+
+<div class="hidden
+lg:flex
+items-center
+gap-4">
+
+<a href="https://tnpsc-ai.streamlit.app"
+
+target="_blank"
+
+class="px-6
+py-3
+rounded-xl
+bg-primary
+text-white
+font-bold
+shadow-lg
+hover:scale-105
+duration-300">
+
+Open App
+
+</a>
+
+</div>
+
+<button
+
+id="menuButton"
+
+class="lg:hidden
+text-2xl">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- ================================================= -->
+<!-- HERO -->
+<!-- ================================================= -->
+
+<section
+
+class="relative
+pt-40
+pb-28">
+
+<div
+
+class="absolute
+inset-0
+bg-gradient-to-br
+from-blue-100
+via-white
+to-cyan-100">
+
+</div>
+
+<div
+
+class="absolute
+top-20
+right-20
+w-80
+h-80
+bg-blue-400/20
+rounded-full
+blur-3xl">
+
+</div>
+
+<div
+
+class="absolute
+bottom-10
+left-10
+w-72
+h-72
+bg-cyan-300/20
+rounded-full
+blur-3xl">
+
+</div>
+
+<div
+
+class="relative
+max-w-7xl
+mx-auto
+px-6">
+
+<div
+
+class="grid
+lg:grid-cols-2
+gap-20
+items-center">
+
+<!-- LEFT -->
+
+<div>
+
+<div
+
+class="inline-flex
+items-center
+gap-2
+bg-blue-100
+text-primary
+font-semibold
+px-5
+py-2
+rounded-full">
+
+🚀 AI Powered TNPSC Preparation
+
+</div>
+
+<h1
+
+class="text-5xl
+lg:text-7xl
+font-black
+leading-tight
+mt-8">
+
+Crack TNPSC
+
+<span class="text-primary">
+
+Smarter
+
+</span>
+
+with AI
+
+</h1>
+
+<p
+
+class="mt-8
+text-xl
+leading-9
+text-slate-600">
+
+India's Smart AI Learning Platform
+
+designed exclusively
+
+for TNPSC Group 1,
+
+Group 2,
+
+Group 2A,
+
+Group 4 and VAO Aspirants.
+
+</p>
+
+<div
+
+class="flex
+flex-wrap
+gap-5
+mt-10">
+
+<a
+
+href="https://tnpsc-ai.streamlit.app"
+
+target="_blank"
+
+class="bg-primary
+text-white
+px-8
+py-4
+rounded-xl
+font-bold
+shadow-xl
+hover:scale-105
+duration-300">
+
+Open App
+
+</a>
+
+<a
+
+href="#features"
+
+class="border-2
+border-primary
+text-primary
+px-8
+py-4
+rounded-xl
+font-bold
+hover:bg-primary
+hover:text-white
+duration-300">
+
+Explore Features
+
+</a>
+
+</div>
+
+<div
+
+class="grid
+grid-cols-3
+gap-8
+mt-16">
+
+<div>
+
+<h2 class="text-4xl
+font-black
+text-primary">
+
+1000+
+
+</h2>
+
+<p class="text-slate-500">
+
+Practice Questions
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="text-4xl
+font-black
+text-primary">
+
+150+
+
+</h2>
+
+<p class="text-slate-500">
+
+Topics
+
+</p>
+
+</div>
+
+<div>
+
+<h2 class="text-4xl
+font-black
+text-primary">
+
+24×7
+
+</h2>
+
+<p class="text-slate-500">
+
+AI Support
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="relative">
+
+<div
+
+class="absolute
+-top-6
+-right-6
+bg-white
+rounded-2xl
+shadow-xl
+px-5
+py-4">
+
+⭐ AI Teacher
+
+</div>
+
+<div
+
+class="absolute
+bottom-10
+-left-6
+bg-white
+rounded-2xl
+shadow-xl
+px-5
+py-4">
+
+📚 Smart Notes
+
+</div>
+
+<img
+    src="assets/images/hero-phone.png"
+    alt="TNPSC Nova AI"
+
+    class="hero-phone glow fade-up relative
+    z-10
+    mx-auto
+    max-w-sm">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- TRUST BAR -->
+<!-- ================================================= -->
+
+<section class="py-8 bg-white border-y border-slate-200">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+<div>🤖 AI Teacher</div>
+
+<div>📚 Smart Notes</div>
+
+<div>📝 Daily Tests</div>
+
+<div>☁️ Cloud Sync</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FEATURES START -->
+<!-- ================================================= -->
+
+<section id="features"
+
+class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<p class="text-primary font-bold uppercase">
+
+Features
+
+</p>
+
+<h2 class="text-5xl font-black mt-5">
+
+Everything You Need
+
+to Crack TNPSC
+
+</h2>
+
+<p class="text-slate-600 mt-6 max-w-3xl mx-auto">
+
+AI-powered tools specially designed
+for TNPSC aspirants.
+
+</p>
+
+</div>
+
+<div class="grid
+md:grid-cols-2
+lg:grid-cols-4
+gap-8
+mt-16">
+
+            <!-- Feature Card 1 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">🤖</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    AI Teacher
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Learn every TNPSC topic with AI-powered explanations,
+                    examples and instant doubt solving.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 2 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">📚</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Smart Notes
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Topic-wise bilingual notes specially prepared
+                    for TNPSC aspirants.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 3 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">📝</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Daily Tests
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Practice daily with high-quality questions
+                    and improve your confidence.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 4 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">📊</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Analytics
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Analyze strengths, weaknesses,
+                    accuracy and overall progress.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 5 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">🎯</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Mock Exams
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Real exam experience with detailed
+                    performance reports.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 6 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">🧠</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Weakness Analysis
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    AI automatically identifies weak topics
+                    and recommends revision.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 7 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">🔥</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Daily Streak
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Stay consistent with learning streaks
+                    and daily goals.
+
+                </p>
+
+            </div>
+
+            <!-- Feature Card 8 -->
+
+            <div class="feature-card reveal bg-white rounded-3xl p-8 shadow-lg hover:-translate-y-2 duration-300">
+
+                <div class="text-5xl mb-6">☁️</div>
+
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Cloud Sync
+
+                </h3>
+
+                <p class="text-slate-600 leading-8">
+
+                    Securely synchronize your progress
+                    across devices.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- APP PREVIEW -->
+<!-- ================================================= -->
+
+<section id="preview"
+
+class="py-24 bg-white">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<p class="text-primary font-bold uppercase">
+
+Application Preview
+
+</p>
+
+<h2 class="text-5xl font-black mt-5">
+
+Beautiful & Modern Learning Experience
+
+</h2>
+
+<p class="text-slate-600 mt-6 max-w-3xl mx-auto">
+
+Designed to help every TNPSC aspirant
+learn faster and stay motivated.
+
+</p>
+
+</div>
+
+<div class="grid lg:grid-cols-3 gap-10 mt-20">
+
+<div class="screenshot-card reveal bg-slate-100 rounded-3xl p-6">
+
+<img
+
+src="assets/images/screenshots/live-stats.jpeg"
+
+class="rounded-2xl"
+
+alt="Live Stats">
+
+</div>
+
+<div class="screenshot-card reveal bg-slate-100 rounded-3xl p-6">
+
+<img
+
+src="assets/images/screenshots/dashboard.jpeg"
+
+class="rounded-2xl"
+
+alt="Dashboard">
+
+</div>
+
+<div class="screenshot-card reveal bg-slate-100 rounded-3xl p-6">
+
+<img
+
+src="assets/images/screenshots/test-complete.jpeg"
+
+class="rounded-2xl"
+
+alt="Daily Test">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- WHY NOVA AI -->
+<!-- ================================================= -->
+
+<section id="why"
+
+class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<p class="text-primary font-bold uppercase">
+
+Why Choose Us
+
+</p>
+
+<h2 class="text-5xl font-black mt-5">
+
+Built Exclusively
+
+for TNPSC Aspirants
+
+</h2>
+
+</div>
+
+<div class="grid lg:grid-cols-2 gap-10 mt-20">
+
+<div class="bg-white rounded-3xl p-8 shadow-lg">
+
+<h3 class="text-2xl font-bold mb-4">
+
+📖 Learn Smart
+
+</h3>
+
+<p class="text-slate-600 leading-8">
+
+Master concepts using AI explanations,
+smart notes and structured learning.
+
+</p>
+
+</div>
+
+<div class="bg-white rounded-3xl p-8 shadow-lg">
+
+<h3 class="text-2xl font-bold mb-4">
+
+📝 Practice Daily
+
+</h3>
+
+<p class="text-slate-600 leading-8">
+
+Daily tests and mock exams improve
+speed, accuracy and confidence.
+
+</p>
+
+</div>
+
+<div class="bg-white rounded-3xl p-8 shadow-lg">
+
+<h3 class="text-2xl font-bold mb-4">
+
+📊 Analyze Progress
+
+</h3>
+
+<p class="text-slate-600 leading-8">
+
+Track strengths and weaknesses
+using intelligent analytics.
+
+</p>
+
+</div>
+
+<div class="bg-white rounded-3xl p-8 shadow-lg">
+
+<h3 class="text-2xl font-bold mb-4">
+
+🏆 Achieve Success
+
+</h3>
+
+<p class="text-slate-600 leading-8">
+
+Stay consistent, revise effectively
+and improve your TNPSC rank.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FAQ -->
+<!-- ================================================= -->
+
+<section id="faq"
+class="py-24 bg-slate-50">
+
+<div class="max-w-5xl mx-auto px-6">
+
+<div class="text-center">
+
+<p class="text-primary font-bold uppercase">
+
+Frequently Asked Questions
+
+</p>
+
+<h2 class="text-5xl font-black mt-5">
+
+Got Questions?
+
+We've Got Answers.
+
+</h2>
+
+<p class="text-slate-600 mt-6">
+
+Everything you need to know about
+TNPSC Nova AI.
+
+</p>
+
+</div>
+
+<div class="mt-16 space-y-6">
+
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+
+<h3 class="text-xl font-bold">
+
+Is TNPSC Nova AI free to use?
+
+</h3>
+
+<p class="text-slate-600 mt-3 leading-8">
+
+Yes. Basic features are available free.
+Premium features will be available through
+subscription in future updates.
+
+</p>
+
+</div>
+
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+
+<h3 class="text-xl font-bold">
+
+Which TNPSC exams are supported?
+
+</h3>
+
+<p class="text-slate-600 mt-3 leading-8">
+
+Group 1, Group 2, Group 2A,
+Group 4, VAO and future TNPSC exams.
+
+</p>
+
+</div>
+
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+
+<h3 class="text-xl font-bold">
+
+Can I track my progress?
+
+</h3>
+
+<p class="text-slate-600 mt-3 leading-8">
+
+Yes.
+Dashboard analytics help monitor
+accuracy, weak topics, daily streaks
+and overall preparation.
+
+</p>
+
+</div>
+
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+
+<h3 class="text-xl font-bold">
+
+Can I ask doubts to AI?
+
+</h3>
+
+<p class="text-slate-600 mt-3 leading-8">
+
+Yes.
+Our AI Teacher explains concepts,
+clears doubts and helps you learn
+in a simple way.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- CTA -->
+<!-- ================================================= -->
+
+<section
+class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div
+
+class="rounded-[40px]
+bg-gradient-to-r
+from-primary
+to-accent
+text-white
+text-center
+px-10
+py-20">
+
+<h2
+
+class="text-5xl
+font-black">
+
+Ready to Crack
+
+TNPSC?
+
+</h2>
+
+<p class="mt-8 text-xl max-w-3xl mx-auto leading-9 !text-white opacity-95">
+
+Join thousands of aspirants preparing
+smarter with AI-powered learning,
+daily practice and intelligent analytics.
+
+</p>
+
+<div
+
+class="mt-12
+flex
+justify-center
+gap-5
+flex-wrap">
+
+<a
+
+href="https://tnpsc-ai.streamlit.app"
+
+target="_blank"
+
+class="bg-white
+text-primary
+font-bold
+px-8
+py-4
+rounded-xl
+hover:scale-105
+duration-300">
+
+Open App
+
+</a>
+
+<a
+
+href="#features"
+
+class="border-2
+border-white
+px-8
+py-4
+rounded-xl
+font-bold
+hover:bg-white
+hover:text-primary
+duration-300">
+
+Explore Features
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer
+class="bg-slate-950 text-slate-300 pt-20">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div
+class="grid
+md:grid-cols-2
+lg:grid-cols-4
+gap-12">
+
+<div>
+
+<img
+
+src="assets/images/logo.png"
+
+class="w-14 mb-5"
+
+alt="Logo">
+
+<h3 class="text-white font-bold text-2xl">
+
+TNPSC Nova AI
+
+</h3>
+
+<p class="mt-5 leading-8">
+
+India's Smart AI Learning Platform
+built exclusively for TNPSC Aspirants.
+
+</p>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-bold mb-5">
+
+Quick Links
+
+</h4>
+
+<ul class="space-y-3">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#preview">Preview</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-bold mb-5">
+
+Legal
+
+</h4>
+
+<ul class="space-y-3">
+
+<li>
+
+<a href="privacy-policy.html">
+
+Privacy Policy
+
+</a>
+
+</li>
+
+<li>
+
+<a href="terms-and-conditions.html">
+
+Terms & Conditions
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="text-white font-bold mb-5">
+
+Launch App
+
+</h4>
+
+<p class="leading-8">
+
+Experience AI-powered TNPSC preparation.
+
+</p>
+
+<a
+
+href="https://tnpsc-ai.streamlit.app"
+
+target="_blank"
+
+class="inline-block
+mt-6
+bg-primary
+text-white
+font-bold
+px-6
+py-3
+rounded-xl">
+
+Open App
+
+</a>
+
+</div>
+
+</div>
+
+<hr class="border-slate-800 my-12">
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-10">
+
+            <p class="text-slate-500 text-center md:text-left">
+
+                © 2026 TNPSC Nova AI. All Rights Reserved.
+
+            </p>
+
+            <div class="flex items-center gap-6">
+
+                <a href="#"
+                   class="hover:text-white duration-300">
+
+                    <i class="fa-brands fa-facebook text-xl"></i>
+
+                </a>
+
+                <a href="#"
+                   class="hover:text-white duration-300">
+
+                    <i class="fa-brands fa-instagram text-xl"></i>
+
+                </a>
+
+                <a href="#"
+                   class="hover:text-white duration-300">
+
+                    <i class="fa-brands fa-youtube text-xl"></i>
+
+                </a>
+
+                <a href="#"
+                   class="hover:text-white duration-300">
+
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ================================================= -->
+<!-- MOBILE MENU -->
+<!-- ================================================= -->
+
+<div id="mobileMenu"
+
+class="fixed
+top-0
+right-[-100%]
+w-72
+h-screen
+bg-white
+shadow-2xl
+z-[999]
+duration-300">
+
+<div class="flex justify-between items-center p-6 border-b">
+
+<h2 class="font-black text-xl">
+
+TNPSC Nova AI
+
+</h2>
+
+<button id="closeMenu"
+
+class="text-2xl">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<nav class="flex flex-col p-6 gap-6">
+
+<a href="#"
+
+class="font-semibold">
+
+Home
+
+</a>
+
+<a href="#features"
+
+class="font-semibold">
+
+Features
+
+</a>
+
+<a href="#preview"
+
+class="font-semibold">
+
+Preview
+
+</a>
+
+<a href="#faq"
+
+class="font-semibold">
+
+FAQ
+
+</a>
+
+<a href="about.html"
+
+class="font-semibold">
+
+About
+
+</a>
+
+<a href="contact.html"
+
+class="font-semibold">
+
+Contact
+
+</a>
+
+<a href="privacy-policy.html"
+
+class="font-semibold">
+
+Privacy Policy
+
+</a>
+
+<a href="terms-and-conditions.html"
+
+class="font-semibold">
+
+Terms & Conditions
+
+</a>
+
+<a href="https://tnpsc-ai.streamlit.app"
+
+target="_blank"
+
+class="mt-4
+text-center
+bg-primary
+text-white
+font-bold
+rounded-xl
+py-4">
+
+Open App
+
+</a>
+
+</nav>
+
+</div>
+
+<!-- ================================================= -->
+<!-- OVERLAY -->
+<!-- ================================================= -->
+
+<div id="overlay"
+
+class="fixed
+inset-0
+bg-black/40
+hidden
+z-[998]">
+
+</div>
+
+<!-- ================================================= -->
+<!-- BACK TO TOP -->
+<!-- ================================================= -->
+
+<button id="topButton"
+
+class="fixed
+bottom-6
+right-6
+hidden
+w-14
+h-14
+rounded-full
+bg-primary
+text-white
+shadow-xl
+hover:scale-110
+duration-300
+z-50">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ================================================= -->
+<!-- CUSTOM SCRIPT -->
+<!-- ================================================= -->
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

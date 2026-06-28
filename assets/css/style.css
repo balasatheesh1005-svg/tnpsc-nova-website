@@ -1,0 +1,1700 @@
+/* =======================================================
+   TNPSC Nova AI Website V2
+   Author : TNPSC Nova AI
+   ======================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f8fafc;
+    color:#0f172a;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+/* =======================================================
+   Scrollbar
+   ======================================================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#e5e7eb;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#1d4ed8;
+}
+
+/* =======================================================
+   Selection
+   ======================================================= */
+
+::selection{
+    background:#2563eb;
+    color:#fff;
+}
+
+/* =======================================================
+   Images
+   ======================================================= */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =======================================================
+   Links
+   ======================================================= */
+
+a{
+    text-decoration:none;
+    transition:.3s ease;
+}
+
+/* =======================================================
+   Buttons
+   ======================================================= */
+
+button{
+    cursor:pointer;
+    transition:.3s ease;
+    border:none;
+}
+
+/* =======================================================
+   Navbar
+   ======================================================= */
+
+header{
+
+    transition:.35s ease;
+
+}
+
+header.scrolled{
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+/* =======================================================
+   Hero
+   ======================================================= */
+
+section{
+
+    position:relative;
+
+}
+
+.hero-gradient{
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(37,99,235,.18),
+    transparent 45%),
+
+    radial-gradient(circle at bottom left,
+    rgba(6,182,212,.18),
+    transparent 40%);
+
+}
+
+/* =======================================================
+   Floating Cards
+   ======================================================= */
+
+.shadow-card{
+
+    box-shadow:
+
+    0 15px 40px rgba(15,23,42,.08);
+
+}
+
+.shadow-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 25px 50px rgba(37,99,235,.18);
+
+}
+
+/* =======================================================
+   Statistics
+   ======================================================= */
+
+.stats-box h2{
+
+    letter-spacing:-1px;
+
+}
+
+/* =======================================================
+   Features
+   ======================================================= */
+
+.feature-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:32px;
+
+    transition:.35s ease;
+
+    box-shadow:
+
+    0 10px 30px rgba(15,23,42,.06);
+
+}
+
+.feature-card:hover{
+
+    transform:
+
+    translateY(-10px);
+
+    box-shadow:
+
+    0 20px 45px rgba(37,99,235,.16);
+
+}
+
+.feature-card i{
+
+    color:#2563eb;
+
+}
+
+.feature-card h3{
+
+    margin-top:20px;
+
+    margin-bottom:14px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.feature-card p{
+
+    color:#64748b;
+
+    line-height:1.9;
+
+}
+
+/* =======================================================
+   Preview Images
+   ======================================================= */
+
+.preview-image{
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+}
+
+.preview-image:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* =======================================================
+   WHY CHOOSE SECTION
+   ======================================================= */
+
+#why{
+
+    background:#f8fafc;
+
+}
+
+#why .bg-white{
+
+    transition:.35s ease;
+
+}
+
+#why .bg-white:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 50px rgba(37,99,235,.12);
+
+}
+
+/* =======================================================
+   FAQ
+   ======================================================= */
+
+#faq .bg-white{
+
+    transition:.35s ease;
+
+    border:1px solid transparent;
+
+}
+
+#faq .bg-white:hover{
+
+    border-color:#dbeafe;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 40px rgba(37,99,235,.10);
+
+}
+
+#faq h3{
+
+    color:#0f172a;
+
+}
+
+#faq p{
+
+    color:#64748b;
+
+    line-height:1.9;
+
+}
+
+/* =======================================================
+   CTA SECTION
+   ======================================================= */
+
+section .from-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+section .from-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    right:-120px;
+
+}
+
+section .from-primary::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    left:-80px;
+
+}
+
+/* =======================================================
+   FOOTER
+   ======================================================= */
+
+footer{
+
+    background:#020617;
+
+}
+
+footer a{
+
+    color:#cbd5e1;
+
+    transition:.3s ease;
+
+}
+
+footer a:hover{
+
+    color:#60a5fa;
+
+}
+
+footer h3,
+footer h4{
+
+    color:#fff;
+
+}
+
+footer p{
+
+    color:#94a3b8;
+
+    line-height:1.8;
+
+}
+
+footer hr{
+
+    border-color:#1e293b;
+
+}
+
+/* =======================================================
+   SOCIAL ICONS
+   ======================================================= */
+
+footer .fa-brands{
+
+    transition:.3s ease;
+
+}
+
+footer .fa-brands:hover{
+
+    transform:translateY(-4px) scale(1.1);
+
+    color:#60a5fa;
+
+}
+
+/* =======================================================
+   MOBILE MENU
+   ======================================================= */
+
+#mobileMenu{
+
+    transition:.35s ease;
+
+    box-shadow:-15px 0 40px rgba(0,0,0,.15);
+
+}
+
+#mobileMenu a{
+
+    color:#0f172a;
+
+    transition:.3s ease;
+
+}
+
+#mobileMenu a:hover{
+
+    color:#2563eb;
+
+    padding-left:8px;
+
+}
+
+#overlay{
+
+    backdrop-filter:blur(3px);
+
+}
+
+/* =======================================================
+   BACK TO TOP BUTTON
+   ======================================================= */
+
+#topButton{
+
+    transition:.35s ease;
+
+}
+
+#topButton:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.35);
+
+}
+
+/* =======================================================
+   SECTION TITLES
+   ======================================================= */
+
+section h2{
+
+    letter-spacing:-1px;
+
+}
+
+section p{
+
+    color:inherit;
+
+}
+
+/* =======================================================
+   GENERAL HOVER EFFECT
+   ======================================================= */
+
+.hover-lift{
+
+    transition:.35s ease;
+
+}
+
+.hover-lift:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* =======================================================
+   GLASS EFFECT
+   ======================================================= */
+
+.glass{
+
+    background:rgba(255,255,255,.65);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.4);
+
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+
+}
+
+/* =======================================================
+   HERO IMAGE ANIMATION
+   ======================================================= */
+
+.hero-phone{
+
+    animation:floatPhone 5s ease-in-out infinite;
+
+}
+
+@keyframes floatPhone{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* =======================================================
+   FLOATING BADGES
+   ======================================================= */
+
+.floating-card{
+
+    animation:floatCard 4s ease-in-out infinite;
+
+}
+
+.floating-card:nth-child(2){
+
+    animation-delay:1s;
+
+}
+
+.floating-card:nth-child(3){
+
+    animation-delay:2s;
+
+}
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =======================================================
+   FADE UP ANIMATION
+   ======================================================= */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* =======================================================
+   FADE IN
+   ======================================================= */
+
+.fade{
+
+    opacity:0;
+
+    transition:opacity .8s ease;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+}
+
+/* =======================================================
+   ZOOM IN
+   ======================================================= */
+
+.zoom{
+
+    transform:scale(.9);
+
+    opacity:0;
+
+    transition:all .7s ease;
+
+}
+
+.zoom.show{
+
+    transform:scale(1);
+
+    opacity:1;
+
+}
+
+/* =======================================================
+   FEATURE CARD ICON
+   ======================================================= */
+
+.feature-card div:first-child{
+
+    transition:.35s ease;
+
+}
+
+.feature-card:hover div:first-child{
+
+    transform:scale(1.15) rotate(6deg);
+
+}
+
+/* =======================================================
+   BUTTON EFFECT
+   ======================================================= */
+
+.btn-glow{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-glow::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120%;
+
+    height:100%;
+
+    left:-120%;
+
+    top:0;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.45),
+
+    transparent);
+
+    transition:.8s;
+
+}
+
+.btn-glow:hover::before{
+
+    left:120%;
+
+}
+
+/* =======================================================
+   IMAGE HOVER
+   ======================================================= */
+
+.preview-image img{
+
+    transition:.4s ease;
+
+}
+
+.preview-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* =======================================================
+   SECTION DIVIDER
+   ======================================================= */
+
+.section-divider{
+
+    width:80px;
+
+    height:4px;
+
+    margin:20px auto;
+
+    border-radius:50px;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #2563eb,
+
+    #06b6d4);
+
+}
+
+/* =======================================================
+   GRADIENT TEXT
+   ======================================================= */
+
+.gradient-text{
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #2563eb,
+
+    #06b6d4);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* =======================================================
+   CARD BORDER GLOW
+   ======================================================= */
+
+.glow-card{
+
+    position:relative;
+
+}
+
+.glow-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:24px;
+
+    padding:1px;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    rgba(37,99,235,.5),
+
+    rgba(6,182,212,.4));
+
+    -webkit-mask:
+
+        linear-gradient(#fff 0 0) content-box,
+
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+/* =======================================================
+   SOFT SHADOW
+   ======================================================= */
+
+.soft-shadow{
+
+    box-shadow:
+
+    0 15px 40px rgba(15,23,42,.08);
+
+}
+
+/* =======================================================
+   HOVER SCALE
+   ======================================================= */
+
+.hover-scale{
+
+    transition:.35s ease;
+
+}
+
+.hover-scale:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* =======================================================
+   SMOOTH TRANSITIONS
+   ======================================================= */
+
+img,
+button,
+a,
+div{
+
+    transition-property:
+
+    transform,
+
+    box-shadow,
+
+    color,
+
+    background,
+
+    border;
+
+    transition-duration:.3s;
+
+    transition-timing-function:ease;
+
+}
+
+/* =======================================================
+   RESPONSIVE - TABLETS
+   ======================================================= */
+
+@media (max-width:1024px){
+
+    h1{
+
+        font-size:3.5rem !important;
+
+        line-height:1.1;
+
+    }
+
+    section{
+
+        padding-top:80px;
+
+        padding-bottom:80px;
+
+    }
+
+    .feature-card{
+
+        padding:28px;
+
+    }
+
+}
+
+/* =======================================================
+   RESPONSIVE - MOBILE
+   ======================================================= */
+
+@media (max-width:768px){
+
+    html{
+
+        font-size:15px;
+
+    }
+
+    h1{
+
+        font-size:2.8rem !important;
+
+        line-height:1.15;
+
+        text-align:center;
+
+    }
+
+    h2{
+
+        font-size:2rem !important;
+
+        text-align:center;
+
+    }
+
+    p{
+
+        text-align:center;
+
+    }
+
+    section{
+
+        padding-top:70px;
+
+        padding-bottom:70px;
+
+    }
+
+    .feature-card{
+
+        padding:24px;
+
+    }
+
+    .stats-box{
+
+        text-align:center;
+
+    }
+
+    .preview-image{
+
+        max-width:340px;
+
+        margin:auto;
+
+    }
+
+    footer{
+
+        text-align:center;
+
+    }
+
+    footer ul{
+
+        padding:0;
+
+    }
+
+    footer li{
+
+        list-style:none;
+
+    }
+
+}
+
+/* =======================================================
+   SMALL MOBILE
+   ======================================================= */
+
+@media (max-width:480px){
+
+    h1{
+
+        font-size:2.3rem !important;
+
+    }
+
+    h2{
+
+        font-size:1.7rem !important;
+
+    }
+
+    .feature-card{
+
+        padding:20px;
+
+    }
+
+}
+
+/* =======================================================
+   ACCESSIBILITY
+   ======================================================= */
+
+a:focus,
+button:focus{
+
+    outline:3px solid #2563eb;
+
+    outline-offset:4px;
+
+}
+
+/* =======================================================
+   REDUCED MOTION
+   ======================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/* =======================================================
+   UTILITIES
+   ======================================================= */
+
+.text-shadow{
+
+    text-shadow:0 3px 12px rgba(0,0,0,.15);
+
+}
+
+.rounded-xl-plus{
+
+    border-radius:28px;
+
+}
+
+.border-gradient{
+
+    border:1px solid rgba(37,99,235,.15);
+
+}
+
+.bg-grid{
+
+    background-image:
+
+    linear-gradient(rgba(0,0,0,.03) 1px, transparent 1px),
+
+    linear-gradient(90deg, rgba(0,0,0,.03) 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+}
+
+/* =======================================================
+   LOADING EFFECT
+   ======================================================= */
+
+.fade-page{
+
+    animation:pageFade .8s ease;
+
+}
+
+@keyframes pageFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* CTA Text Visibility */
+
+.cta-section h2{
+
+    color:#ffffff;
+
+    text-shadow:0 3px 12px rgba(0,0,0,.25);
+
+}
+
+.cta-section p{
+
+    color:rgba(255,255,255,.95);
+
+}
+
+.cta-section{
+
+    position:relative;
+
+}
+
+.cta-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.08);
+
+    border-radius:40px;
+
+    pointer-events:none;
+
+}
+
+/* ===========================================================
+   TNPSC NOVA AI V3 ANIMATION PACK
+   Add at END of style.css
+=========================================================== */
+
+/* ---------- Smooth Scroll ---------- */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ---------- Selection ---------- */
+
+::selection{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+/* ---------- Image Rendering ---------- */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+    transition:all .45s ease;
+
+}
+
+/* ---------- Hero Phone ---------- */
+
+.hero-phone{
+
+    border-radius:32px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 25px 70px rgba(37,99,235,.30),
+
+    0 10px 30px rgba(0,0,0,.18);
+
+    animation:floatPhone 5s ease-in-out infinite;
+
+    transition:.45s;
+
+}
+
+.hero-phone:hover{
+
+    transform:translateY(-10px) scale(1.02);
+
+    box-shadow:
+
+    0 35px 90px rgba(37,99,235,.40);
+
+}
+
+/* ---------- Screenshot Cards ---------- */
+
+.screenshot-card{
+
+    background:#fff;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+
+    0 18px 45px rgba(15,23,42,.08);
+
+    transition:.35s ease;
+
+}
+
+.screenshot-card img{
+
+    transition:.45s ease;
+
+}
+
+.screenshot-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 35px 70px rgba(37,99,235,.20);
+
+}
+
+.screenshot-card:hover img{
+
+    transform:scale(1.04);
+
+}
+
+/* ---------- Feature Card ---------- */
+
+.feature-card{
+
+    transition:.35s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.feature-card:hover h3{
+
+    color:#2563EB;
+
+}
+
+/* ---------- Buttons ---------- */
+
+.btn-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:80%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.45),
+
+    transparent);
+
+    transition:.7s;
+
+}
+
+.btn-primary:hover::before{
+
+    left:140%;
+
+}
+
+/* ---------- Navbar ---------- */
+
+header{
+
+    transition:.35s ease;
+
+}
+
+header.scrolled{
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.82);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/* ---------- Section Reveal ---------- */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ---------- Floating Glow ---------- */
+
+.glow{
+
+    position:relative;
+
+}
+
+.glow::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-15px;
+
+    border-radius:40px;
+
+    background:
+
+    radial-gradient(
+
+    rgba(59,130,246,.22),
+
+    transparent 70%);
+
+    filter:blur(30px);
+
+    z-index:-1;
+
+}
+
+/* ---------- Social Icons ---------- */
+
+footer a{
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:#60A5FA;
+
+    transform:translateY(-3px);
+
+}
+
+/* ---------- Back To Top ---------- */
+
+#topButton{
+
+    transition:.35s;
+
+}
+
+#topButton:hover{
+
+    transform:translateY(-6px) scale(1.08);
+
+}
+
+/* ---------- Animations ---------- */
+
+@keyframes floatPhone{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .9s ease both;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:768px){
+
+.hero-phone{
+
+    margin-top:40px;
+
+}
+
+.screenshot-card{
+
+    border-radius:22px;
+
+}
+
+}
+/* =======================================================
+   END OF FILE
+   ======================================================= */
+
+/* =======================================================
+   PRODUCTION PRESENTATION POLISH
+   ======================================================= */
+
+header{
+    transition:background-color .3s ease, box-shadow .3s ease,
+               backdrop-filter .3s ease, -webkit-backdrop-filter .3s ease;
+}
+
+header.scrolled{
+    background:rgba(255,255,255,.86);
+    -webkit-backdrop-filter:blur(18px) saturate(145%);
+    backdrop-filter:blur(18px) saturate(145%);
+    box-shadow:0 8px 28px rgba(15,23,42,.09);
+}
+
+.hero-phone.glow{
+    position:relative;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 22px 28px rgba(15,23,42,.20))
+           drop-shadow(0 0 34px rgba(37,99,235,.30));
+    box-shadow:none;
+    animation:premiumPhoneFloat 5.5s ease-in-out infinite;
+    will-change:translate, transform;
+}
+
+.hero-phone.glow::after{
+    content:none;
+}
+
+.hero-phone.glow:hover{
+    transform:scale(1.025);
+    filter:drop-shadow(0 30px 36px rgba(15,23,42,.24))
+           drop-shadow(0 0 44px rgba(37,99,235,.38));
+}
+
+@keyframes premiumPhoneFloat{
+    0%, 100%{ translate:0 0; }
+    50%{ translate:0 -14px; }
+}
+
+.feature-card{
+    box-shadow:0 12px 32px rgba(15,23,42,.075);
+    transition:transform .35s cubic-bezier(.2,.75,.25,1),
+               box-shadow .35s ease, border-color .35s ease;
+    will-change:transform;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 46px rgba(15,23,42,.13);
+}
+
+.feature-card h3{
+    transition:color .3s ease;
+}
+
+.feature-card:hover h3{
+    color:#2563eb;
+}
+
+.screenshot-card{
+    background:linear-gradient(145deg, rgba(255,255,255,.82), rgba(241,245,249,.65));
+    border:1px solid rgba(255,255,255,.78);
+    border-radius:1.5rem;
+    overflow:hidden;
+    -webkit-backdrop-filter:blur(14px) saturate(130%);
+    backdrop-filter:blur(14px) saturate(130%);
+    box-shadow:0 18px 42px rgba(15,23,42,.10),
+               inset 0 1px 0 rgba(255,255,255,.8);
+    transition:transform .4s cubic-bezier(.2,.75,.25,1), box-shadow .4s ease;
+}
+
+.screenshot-card img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    border-radius:1rem;
+    transition:transform .5s cubic-bezier(.2,.75,.25,1);
+}
+
+.screenshot-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 28px 58px rgba(37,99,235,.16),
+               inset 0 1px 0 rgba(255,255,255,.9);
+}
+
+.screenshot-card:hover img{
+    transform:scale(1.035);
+}
+
+.button-shine{
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+}
+
+.button-shine::after{
+    content:"";
+    position:absolute;
+    top:-30%;
+    left:-75%;
+    width:42%;
+    height:160%;
+    background:linear-gradient(90deg, transparent, rgba(255,255,255,.48), transparent);
+    transform:skewX(-20deg);
+    transition:left .65s ease;
+    pointer-events:none;
+}
+
+.button-shine:hover::after{
+    left:135%;
+}
+
+footer .fa-brands{
+    transition:transform .3s ease, color .3s ease;
+}
+
+footer a:hover .fa-brands{
+    color:#60a5fa;
+    transform:translateY(-4px) scale(1.08);
+}
+
+#topButton{
+    transition:transform .3s cubic-bezier(.2,.75,.25,1),
+               box-shadow .3s ease, background-color .3s ease;
+}
+
+#topButton:hover{
+    transform:translateY(-5px) scale(1.06);
+    box-shadow:0 14px 30px rgba(37,99,235,.30);
+}
+
+.reveal,
+.reveal-section{
+    opacity:0;
+    transform:translateY(32px);
+    transition:opacity .7s ease var(--reveal-delay, 0ms),
+               transform .7s cubic-bezier(.2,.75,.25,1) var(--reveal-delay, 0ms);
+}
+
+.reveal.active,
+.reveal-section.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.feature-card.reveal.active:hover,
+.screenshot-card.reveal.active:hover{
+    transform:translateY(-8px);
+}
+
+.hero-phone.fade-up{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(28px);
+    transition:opacity .8s ease, transform .8s cubic-bezier(.2,.75,.25,1),
+               filter .4s ease;
+}
+
+.hero-phone.fade-up.active,
+.hero-phone.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Image cards remain visible even if reveal JavaScript is unavailable. */
+.screenshot-card.reveal{
+    opacity:1;
+    visibility:visible;
+}
+
+@media (max-width:768px){
+    .hero-phone.glow{
+        max-width:min(100%, 22rem);
+    }
+
+    .reveal,
+    .reveal-section{
+        transform:translateY(24px);
+    }
+}
+
+@media (hover:none){
+    .feature-card:active,
+    .screenshot-card:active{
+        transform:translateY(-3px);
+    }
+}
+
+@media (prefers-reduced-motion:reduce){
+    .reveal,
+    .reveal-section,
+    .hero-phone.fade-up{
+        opacity:1 !important;
+        transform:none !important;
+    }
+}

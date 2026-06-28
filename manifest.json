@@ -1,0 +1,22 @@
+{
+  "name": "TNPSC Nova AI",
+  "short_name": "Nova AI",
+  "description": "AI Powered TNPSC Learning Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/images/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
